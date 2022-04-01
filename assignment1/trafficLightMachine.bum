@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.comment="act1: trafficLight1, trafficLight2 ≔ {red}, {red}" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="trafficLightContext"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="trafficLight1"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="trafficLight2"/>
+    <org.eventb.core.invariant name="+" org.eventb.core.comment="trafficLights ⊆ COLORS" org.eventb.core.label="inv1" org.eventb.core.predicate="⊤"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="trafficLights"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.comment="trafficLight1 ∩ trafficLight2 ∉ {green}" org.eventb.core.label="inv2" org.eventb.core.predicate="⊤"/>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SWITCH1TOGREEN">
+        <org.eventb.core.guard name="'" org.eventb.core.comment="green ∈ trafficLight2" org.eventb.core.label="grd1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="" org.eventb.core.comment="trafficLight1 ≔ trafficLight1 ∖ {yellow}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.comment="yellow ∈ trafficLight1 " org.eventb.core.label="grd2" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="" org.eventb.core.comment="trafficLight1 ≔ trafficLight ∪ {green}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="/" org.eventb.core.comment="trafficLights = trafficLight1 ∪ trafficLights2" org.eventb.core.label="inv3" org.eventb.core.predicate="⊤"/>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SWITCH1TORED">
+        <org.eventb.core.guard name="'" org.eventb.core.comment="green ∈ trafficLight1" org.eventb.core.label="grd1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="trafficLight1 ≔ trafficLight1 ∖ {green}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="" org.eventb.core.comment="trafficLight1 ≔ trafficLight ∪ {red}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SWITCH1TOYELLOW">
+        <org.eventb.core.guard name="'" org.eventb.core.comment="red ∈ trafficLight1" org.eventb.core.label="grd1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="" org.eventb.core.comment="trafficLight1 ≔ trafficLight1 ∖ {red}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="" org.eventb.core.comment="trafficLight1 ≔ trafficLight1 ∪ {yellow}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="COLORS" org.eventb.core.type="ℙ(COLORS)"/>
+        <org.eventb.core.poIdentifier name="yellow" org.eventb.core.type="COLORS"/>
+        <org.eventb.core.poIdentifier name="red" org.eventb.core.type="COLORS"/>
+        <org.eventb.core.poIdentifier name="green" org.eventb.core.type="COLORS"/>
+        <org.eventb.core.poPredicate name="yellox" org.eventb.core.predicate="partition(COLORS,{red},{yellow},{green})" org.eventb.core.source="/assignment1/trafficLightContext.buc|org.eventb.core.contextFile#trafficLightContext|org.eventb.core.axiom#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/assignment1/trafficLightMachine.bpo|org.eventb.core.poFile#trafficLightMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtrafficLightContexx" org.eventb.core.parentSet="/assignment1/trafficLightMachine.bpo|org.eventb.core.poFile#trafficLightMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtrafficLightContexy" org.eventb.core.parentSet="/assignment1/trafficLightMachine.bpo|org.eventb.core.poFile#trafficLightMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="⊤" org.eventb.core.source="/assignment1/trafficLightMachine.bum|org.eventb.core.machineFile#trafficLightMachine|org.eventb.core.event#1|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/assignment1/trafficLightMachine.bpo|org.eventb.core.poFile#trafficLightMachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="⊤" org.eventb.core.source="/assignment1/trafficLightMachine.bum|org.eventb.core.machineFile#trafficLightMachine|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="⊤" org.eventb.core.source="/assignment1/trafficLightMachine.bum|org.eventb.core.machineFile#trafficLightMachine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="⊤" org.eventb.core.source="/assignment1/trafficLightMachine.bum|org.eventb.core.machineFile#trafficLightMachine|org.eventb.core.invariant#\/"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
