@@ -1,2 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org.eventb.core.psFile/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH1TOGREEN/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH1TORED/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH1TOYELLOW/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH2TOGREEN/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH2TORED/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="SWITCH2TOYELLOW/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="47" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>
